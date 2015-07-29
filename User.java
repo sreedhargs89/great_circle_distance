@@ -60,11 +60,14 @@ public class User implements Comparable<User>{
 				+ ", langitude=" + longitude + "]";
 	}
 
+	/**
+	 * This method to sort the collection content based on the value inside the object
+	 */
 	@Override
 	public int compareTo(User user) {
-	        if (this.distance < user.distance) {
+	        if (this.user_id < user.user_id) {
 	            return -1;
-	        } else if (this.distance > user.distance) {
+	        } else if (this.user_id > user.user_id) {
 	            return 1;
 	        } else {
 	            return 0;
